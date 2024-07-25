@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Tetris Game</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>테트리스 게임</h1>
+    <div id="score">Score: 0</div>
+    <div class="game-area">
+        <canvas height="600" id="gameCanvas" width="300"></canvas>
+        <div class="next-block">
+            <div id="next">Next:</div>
+            <canvas height="180" id="nextCanvas" width="180"></canvas>
+            <div class="hidden" id="level">Level:</div>
+        </div>
+    </div>
+    <div class="hidden" id="game-over">
+        Game Over
+        <div id="final-score"></div>
+        <button id="game-over-start-button">Restart</button>
+        <div id="game-over-difficulty-buttons">
+            <button class="difficulty-button" data-level="Easy" data-speed="600">Easy</button>
+            <button class="difficulty-button" data-level="Intermediate" data-speed="300">Intermediate</button>
+            <button class="difficulty-button" data-level="Hard" data-speed="100">Hard</button>
+        </div>
+    </div>
+    <div id="initial-controls">
+        <button id="initial-start-button">Start</button>
+        <div id="difficulty-buttons">
+            <button class="difficulty-button" data-level="Easy" data-speed="600">Easy</button>
+            <button class="difficulty-button" data-level="Intermediate" data-speed="300">Intermediate</button>
+            <button class="difficulty-button" data-level="Hard" data-speed="100">Hard</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
